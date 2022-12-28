@@ -1,0 +1,160 @@
+html{
+    font-family:'SpotCookieRegular';
+}
+
+/* header */
+#header{
+    text-align: center;
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    background-color: bisque;
+    align-items: baseline;
+    justify-content:space-around;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#header h1{
+    font-size: 2em;
+}
+
+#header img {
+    position: relative;
+    animation: myanimation 2s infinite;
+}
+                    
+@keyframes myanimation {
+    0%   {
+        top: -20px;
+    }
+    50%  {
+        top: 50px;
+    }
+    100% {
+        top: -20px;
+    }
+}
+
+
+/* body */
+
+body{
+    background-image: url("contactbg.jpg");
+    background-attachment: fixed;
+    background-size:100%;
+}
+
+#gif{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#gif h2{
+    font-size: 2em;
+}
+
+#table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#table + p{
+    font-size: 2em;
+    text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+    font-size: 1.5em;
+}
+
+td,th{
+    border: 2px solid black;
+}
+
+tr:hover{
+    background-color: chartreuse;
+    transform: scale(1.5);
+}
+
+#social img{
+    max-width: 5em;
+    max-height: 5em;
+    caption-side: bottom;
+}
+
+#media{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+#media figcaption{
+    font-size: 1.5em;
+}
+
+
+/* footer */
+footer{
+    display: block;
+    background-color: bisque;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color: lightgreen;
+        background-image: none;
+        background-size: 100%;
+        background-attachment: cover;
+        background-repeat: no-repeat;
+        
+    }
+
+    #header h1{
+        font-size: 1em;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lightgreen;
+        background-image: url("contactbg.jpg");
+        background-size: 100%;
+        background-attachment: cover;
+        background-repeat: no-repeat;
+ 
+    }
+
+    #header h1{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        background-image: url("contactbg.jpg");
+        background-size: 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        background-image: url("contactbg.jpg");
+        background-attachment: fixed;
+        background-size:100%;
+    }
+}

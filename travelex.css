@@ -1,0 +1,163 @@
+@viewport{
+    width: device-width;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family:'SpotCookieRegular';
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "top top"
+                         "middle-left middle-right"
+                         "bottom bottom";
+    column-gap: 30px;
+    background-image: url("travelunsplash.jpg");
+    background-size: fixed;
+    background-position: 50%;
+}
+
+
+/* header */
+header{
+    display: flex;
+    flex-direction: column;
+    grid-area: top;
+    text-align: center;
+    background-color: rgb(173, 105, 42);
+}
+
+header h1{
+    font-size: 5em;
+    color: peru;
+    background-color: whitesmoke;
+}
+
+header h2{
+    font-size: 35px;
+    font-style: italic;
+    color:rgb(77, 42, 7);
+    text-decoration: underline;
+}
+
+header p{
+    font-size: 2em;
+}
+
+
+/* nav */
+nav{
+    grid-area: middle-left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: static;
+    top: 0;
+    margin-top: 1em;
+    font-size: 2em;
+    float: left;
+    padding-left: 0.8em;
+}
+
+nav h3{
+    color:antiquewhite;
+}
+
+nav a{
+    color: rgb(6, 149, 232);
+    padding-bottom: 0.6em;
+}
+
+
+/* main */
+main{
+    grid-area: middle-right;
+    font-size: 2em;
+    width: 100%;
+}
+
+img{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+}
+
+#Switzerland h2, #Switzerland h3{
+    color: red;
+}
+
+#Switzerland p, #Switzerland li{
+    color: aliceblue;
+}
+
+#Italy h2, #Italy h3{
+    color: rgb(255,0,0);
+}
+
+#Italy p, #Italy li{
+    color: rgb(63, 155, 63);
+}
+
+#Spain h2, #Spain h3{
+    color: yellow;
+}
+
+#Spain p, #Spain li{
+    color: red;
+}
+
+#Switzerland h2, #Italy h2, #Spain h2{
+    text-align: center;
+}
+
+#Switzerland h3, #Italy h3, #Spain h3{
+    text-decoration: underline;
+}
+
+#Switzerland img, #Italy img, #Spain img{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#later{
+    float: left;
+    color: azure;
+}
+
+img:hover {
+    transform: scale(1.5);
+}
+
+#later{
+    float: left;
+    color: azure;
+    font-size: 1em;
+}
+
+a:link { 
+    color: peru;
+}
+
+a:visited{
+    color: peru;
+}
+            
+a:hover {
+    color: palevioletred;
+}
+
+
+/* footer */
+footer{
+    grid-area: bottom;
+    color: white;
+    background-color: black;
+    font-size: 1.1em;
+}
+
+
+
